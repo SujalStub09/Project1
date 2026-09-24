@@ -1,4 +1,4 @@
-*{
+  *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -67,15 +67,15 @@ a:hover{
 .m-ht{
  display: flex;
  gap:3px;
- padding-left: 600px;
+ padding-left: 710px;
  padding-top: 80px;
 }
 .tra{
     font-family: "Barlow Condensed", sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 900;
     color: white;
-    padding-left: 555px;
+    padding-left: 650px;
     padding-top: 20px;
     
 }
@@ -84,6 +84,7 @@ a:hover{
   color: white;
   font-size: 14px;
 }
+
 .ht1{
     color:#f5634b;
     font-size: 14px;
@@ -110,8 +111,7 @@ a:hover{
 .main{
     height: 40vh;
     padding-top: 100px;
-
-
+    padding-left: 100px;
 }
 .our{
    
@@ -127,7 +127,7 @@ a:hover{
      margin-top: 17px;
      color: #666;
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 .desc1{
     
@@ -135,7 +135,7 @@ a:hover{
      line-height: 1;
      color: #666;
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 .i-m img{
     height: 150px;
@@ -195,24 +195,26 @@ h1{
     display: flex;
     gap:10px;
     justify-content: center;
+    padding-left: 30px;
 }
 .t1{
-    width: 300px;
-    padding: 10px;
-    border: 1px solid #f5634b;
+    width: 350px;
+    padding: 18px;
+    border: 1px solid;
 }
 .t2{
-    width: 300px;
-    padding: 10px;
-      border: 1px solid #f5634b;
+    width: 350px;
+    padding: 18px;
+      border: 1px solid;
 }
 .textarea{
-     width: 67%;
-     height: 150px;
-      border: 1px solid #f5634b;
+     width: 65%;
+     height: 250px;
+   
+      border: 1px solid;
 }
 .TA{
-    padding-left: 304px;
+    padding-left: 419px;
     padding-top: 10px;
 
 }
@@ -221,12 +223,11 @@ h1{
     width: 150px;
     padding: 10px;
     background-color: #f5634b;
-    margin-left: 530px;
+    margin-left: 700px;
     margin-top: 20px;
 }
 .message{
-  
-  padding-left: 510px;
+  text-align: center;
 } 
 footer{
     background-color: rgb(24, 26, 35);
