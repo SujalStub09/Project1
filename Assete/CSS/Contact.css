@@ -110,7 +110,7 @@ a:hover{
 }
 .main{
     height: 40vh;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-left: 100px;
 }
 .our{
@@ -196,6 +196,7 @@ h1{
     gap:10px;
     justify-content: center;
     padding-left: 30px;
+    padding-top: 60px; 
 }
 .t1{
     width: 350px;
@@ -374,5 +375,590 @@ h3{
 .ft1{
     font-size: 12px;
 }
+
+/* ==========================================
+   DESKTOP RESPONSIVE
+   1025px AND ABOVE
+========================================== */
+
+@media screen and (min-width: 1025px) {
+
+    .m-ht {
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .tra {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .main {
+        padding-left: 0;
+        height: auto;
+        text-align: center;
+    }
+
+    .our,
+    .desc,
+    .desc1 {
+        padding-left: 0;
+    }
+
+    .line {
+        width: 40px;
+        height: 5px;
+        background: #f5634b;
+        margin: 0 auto 20px;
+    }
+
+    .line::after {
+        display: none;
+    }
+
+    .m-txt {
+        padding-left: 0;
+        width: 80%;
+        margin: auto;
+    }
+
+    .t1,
+    .t2 {
+        width: 100%;
+    }
+
+    .txt1 {
+        width: 50%;
+    }
+
+    .TA {
+        width: 80%;
+        margin: auto;
+        padding-left: 0;
+    }
+
+    .textarea {
+        width: 100%;
+    }
+
+    .message {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .btn {
+        margin: 20px auto;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .buket {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 80px 0 30px;
+
+        display: grid;
+        grid-template-columns: 1.3fr 1fr 0.7fr 1.2fr;
+        gap: 35px;
+    }
+
+    .ft {
+        width: 100%;
+        max-width: 1200px;
+        margin: 40px auto 0;
+    }
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVE
+   MAX WIDTH: 1024px
+========================================== */
+
+@media screen and (max-width: 1024px) {
+
+    .hero {
+        height: 55vh;
+        min-height: 400px;
+    }
+
+    /* NAVBAR */
+
+    .head {
+        padding: 15px 25px;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logo {
+        padding-left: 0;
+    }
+
+    .nav_links {
+        display: none;
+    }
+
+    .nav_links li {
+        padding-top: 0;
+    }
+
+    .phone {
+       display: none;
+    }
+
+    /* HERO TITLE */
+
+    .m-ht {
+        justify-content: center;
+        padding-left: 0;
+        padding-top: 70px;
+    }
+
+    .tra {
+        text-align: center;
+        padding-left: 0;
+        font-size: 38px;
+    }
+
+    /* CONTACT INTRO */
+
+    .main {
+        height: auto;
+        padding: 70px 20px 40px;
+        text-align: center;
+    }
+
+    .line {
+        width: 40px;
+        height: 5px;
+        background: #f5634b;
+        margin: 0 auto 20px;
+    }
+
+    .line::after {
+        display: none;
+    }
+
+    .our,
+    .desc,
+    .desc1 {
+        padding-left: 0;
+    }
+
+    .our {
+        font-size: 28px;
+    }
+
+    .desc,
+    .desc1 {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    /* CONTACT FORM */
+
+    .m-txt {
+        width: 85%;
+        margin: auto;
+        padding-left: 0;
+        gap: 15px;
+    }
+
+    .txt1 {
+        width: 50%;
+    }
+
+    .t1,
+    .t2 {
+        width: 100%;
+    }
+
+    .TA {
+        width: 85%;
+        margin: auto;
+        padding-left: 0;
+    }
+
+    .textarea {
+        width: 100%;
+    }
+
+    .message {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .btn {
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    /* FOOTER */
+
+    .buket {
+        width: 90%;
+        margin: auto;
+        padding: 60px 0 30px;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 40px 30px;
+    }
+
+    .row1,
+    .row2,
+    .row3,
+    .row4 {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .row12,
+    .row13,
+    .row22,
+    .row23,
+    .row24,
+    .row25,
+    .row41,
+    .row42,
+    .row43,
+    .row44 {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    .ft {
+        width: 100%;
+        margin: 20px auto 0;
+        padding: 15px;
+        justify-content: center;
+    }
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVE
+   MAX WIDTH: 767px
+========================================== */
+
+@media screen and (max-width: 767px) {
+
+    /* HERO */
+
+    .hero {
+        height: auto;
+        min-height: 400px;
+        background-position: center;
+    }
+
+    /* NAVBAR */
+
+    .head {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+        padding: 20px 15px;
+    }
+
+    .logo {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .logo1,
+    .logo2 {
+        font-size: 28px;
+    }
+
+    .nav_links {
+        display: none;
+    }
+
+    .nav_links li {
+        padding-top: 0;
+    }
+
+    .nav_links li a {
+        font-size: 14px;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    /* HERO TITLE */
+
+    .m-ht {
+        padding: 0;
+        margin-top: 35px;
+        justify-content: center;
+    }
+
+    .tra {
+        padding: 15px 0 40px;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    /* CONTACT INTRO */
+
+    .main {
+        height: auto;
+        padding: 50px 20px 30px;
+        text-align: center;
+    }
+
+    .our {
+        font-size: 28px;
+        padding: 0;
+    }
+
+    .desc,
+    .desc1 {
+        padding: 0;
+        margin-top: 12px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* FORM INPUTS */
+
+    .m-txt {
+        width: 90%;
+        padding: 0;
+        margin: auto;
+
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .txt1 {
+        width: 100%;
+    }
+
+    .t1,
+    .t2 {
+        width: 100%;
+        height: 50px;
+        padding: 12px;
+    }
+
+    /* TEXTAREA */
+
+    .TA {
+        width: 90%;
+        padding: 15px 0 0;
+        margin: auto;
+    }
+
+    .textarea {
+        width: 100%;
+        height: 170px;
+        padding: 12px;
+    }
+
+    .message {
+        width: 90%;
+        margin: 10px auto;
+        padding: 0;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    /* BUTTON */
+
+    .btn {
+        width: 160px;
+        margin: 20px auto;
+        padding: 12px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        height: auto;
+        margin-top: 40px;
+    }
+
+    .buket {
+        width: 90%;
+        margin: auto;
+        padding: 50px 0 30px;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px 20px;
+    }
+
+    .row1,
+    .row2,
+    .row3,
+    .row4 {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .row12,
+    .row13,
+    .row22,
+    .row23,
+    .row24,
+    .row25,
+    .row41,
+    .row42,
+    .row43,
+    .row44 {
+        width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    .row11 {
+        font-size: 26px;
+    }
+
+    .row21,
+    .row41,
+    .row3 h3 {
+        font-size: 19px;
+    }
+
+    /* COPYRIGHT */
+
+    .ft {
+        width: 100%;
+        height: auto;
+        margin: 20px 0 0;
+        padding: 18px 10px;
+
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+   MAX WIDTH: 480px
+========================================== */
+
+@media screen and (max-width: 480px) {
+
+    .hero {
+        min-height: 370px;
+    }
+
+    /* NAVBAR */
+
+    .head {
+        padding: 18px 12px;
+        gap: 15px;
+    }
+
+    .nav_links {
+        gap: 12px 15px;
+    }
+
+    .nav_links li a {
+        font-size: 12px;
+    }
+
+    .phone {
+        font-size: 15px;
+    }
+
+    /* HERO TITLE */
+
+    .m-ht {
+        margin-top: 25px;
+    }
+
+    .tra {
+        font-size: 30px;
+    }
+
+    /* CONTACT SECTION */
+
+    .main {
+        padding: 40px 15px 25px;
+    }
+
+    .our {
+        font-size: 25px;
+    }
+
+    .desc,
+    .desc1 {
+        font-size: 13px;
+    }
+
+    /* CONTACT FORM */
+
+    .m-txt,
+    .TA,
+    .message {
+        width: 92%;
+    }
+
+    .t1,
+    .t2 {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .textarea {
+        height: 140px;
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 150px;
+        font-size: 13px;
+    }
+
+    /* FOOTER SINGLE COLUMN */
+
+    .buket {
+        width: 88%;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 40px 0 25px;
+    }
+
+    .row11 {
+        font-size: 25px;
+    }
+
+    .row21,
+    .row41,
+    .row3 h3 {
+        font-size: 19px;
+    }
+
+    .row12,
+    .row13,
+    .row22,
+    .row23,
+    .row24,
+    .row25,
+    .row32 li a,
+    .row42,
+    .row43,
+    .row44 {
+        font-size: 14px;
+    }
+
+    /* COPYRIGHT */
+
+    .ft {
+        font-size: 12px;
+        padding: 15px 8px;
+    }
+}
+
 
  
