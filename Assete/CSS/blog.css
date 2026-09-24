@@ -1,0 +1,666 @@
+  /* =====================================
+   GLOBAL CSS
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    color: #222;
+    background: #f0f2f4;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+.hero {
+    min-height: 400px;
+    width: 100%;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.80),
+            rgba(0, 0, 0, 0.80)
+        ),
+        url("/Assete/CSS/images/bg-image-2-1.jpg");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* =====================================
+   NAVIGATION
+===================================== */
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 6%;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.logo {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+.logo1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.logo2 {
+    color: #f5634b;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.nav_links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav_links li {
+    padding: 10px 0;
+}
+
+.nav_links a {
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav_links a:hover,
+.nav_links a.diff {
+    color: #f5634b;
+}
+
+.phone {
+    color: #f5634b;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* =====================================
+   HERO TITLE
+===================================== */
+
+.m-ht {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+
+    padding-top: 80px;
+}
+
+.ht a {
+    color: white;
+    font-size: 14px;
+}
+
+.ht a:hover {
+    color: #f5634b;
+}
+
+.ht1 {
+    color: #f5634b;
+    font-size: 14px;
+}
+
+.tra {
+    text-align: center;
+    color: white;
+
+    font-size: 40px;
+    font-weight: 800;
+
+    padding-top: 20px;
+}
+
+
+/* =====================================
+   MAIN BLOG CONTAINER
+===================================== */
+
+.m-container {
+    width: 100%;
+    background: #f0f2f4;
+
+    padding: 70px 5%;
+}
+
+.M-flex {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+
+/* =====================================
+   LEFT BLOG SECTION
+===================================== */
+
+.left {
+    flex: 1;
+    min-width: 0;
+}
+
+
+/* Blog card rows */
+
+.row1,
+.row2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+
+/* Blog cards */
+
+.card1,
+.card2,
+.card3 {
+    width: 100%;
+    min-width: 0;
+
+    background: white;
+    overflow: hidden;
+
+    transition: 0.3s ease;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =====================================
+   BLOG IMAGES
+===================================== */
+
+.photos1,
+.photos2 {
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+}
+
+.photos1 img,
+.photos2 img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.card1:hover img,
+.card2:hover img,
+.card3:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =====================================
+   BLOG DESCRIPTION
+===================================== */
+
+.des1 {
+    width: 100%;
+    min-height: 220px;
+
+    padding: 20px;
+    background: white;
+}
+
+.ic {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.ic1,
+.ic2 {
+    padding-top: 5px;
+
+    color: #888;
+    font-size: 13px;
+}
+
+.ic1 i,
+.ic2 i {
+    color: #f5634b;
+    margin-right: 5px;
+}
+
+.des1 h1 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.3;
+
+    padding: 12px 0;
+}
+
+.des1 p {
+    color: #777;
+    font-size: 16px;
+    line-height: 1.5;
+
+    padding: 0;
+}
+
+.des1 h6 {
+    color: #f5634b;
+    font-size: 15px;
+    font-weight: 600;
+
+    padding-top: 15px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.des1 h6:hover {
+    color: #222;
+}
+
+
+/* =====================================
+   RIGHT SIDEBAR
+===================================== */
+
+.right {
+    width: 280px;
+    flex-shrink: 0;
+
+    position: static;
+
+    padding: 25px;
+    background: white;
+}
+
+
+/* Search box */
+
+.txt1 {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.t1 {
+    width: 100%;
+    height: 45px;
+
+    padding: 10px;
+
+    border: 1px solid #ddd;
+    outline: none;
+
+    font-size: 16px;
+    background: white;
+}
+
+.t1:focus {
+    border-color: #f5634b;
+}
+
+
+/* Sidebar headings */
+
+.follow,
+.popular,
+.category,
+.tag {
+    font-size: 24px;
+    font-weight: 700;
+
+    margin-bottom: 18px;
+
+    color: #222;
+    text-transform: uppercase;
+}
+
+.follow {
+    padding-top: 0;
+}
+
+
+/* =====================================
+   SOCIAL ICONS
+===================================== */
+
+.icons {
+    display: flex;
+    gap: 10px;
+
+    margin-bottom: 35px;
+}
+
+.icons i {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #f0f2f4;
+    color: #222;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icons i:hover {
+    background: #f5634b;
+    color: white;
+}
+
+
+/* =====================================
+   POPULAR POSTS
+===================================== */
+
+.m-pt {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 18px;
+}
+
+.photo1 {
+    width: 85px;
+    height: 65px;
+
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.photo1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text1 {
+    flex: 1;
+
+    font-size: 16px;
+    line-height: 1.4;
+
+    color: #333;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.text1:hover {
+    color: #f5634b;
+}
+
+
+/* =====================================
+   CATEGORIES
+===================================== */
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    background: white;
+    margin-bottom: 30px;
+}
+
+.rating1 p {
+    padding: 0 0 12px;
+
+    color: #777;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.rating1 p:hover {
+    color: #f5634b;
+}
+
+.rating2 {
+    text-align: right;
+}
+
+.RT {
+    min-width: 25px;
+
+    margin-bottom: 12px;
+    padding: 3px 6px;
+
+    background: #f5634b;
+    border-radius: 5px;
+
+    color: white;
+    text-align: center;
+}
+
+
+/* =====================================
+   TAGS
+===================================== */
+
+.token1,
+.token2,
+.token3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-bottom: 12px;
+}
+
+.token4,
+.token5,
+.token6,
+.token7,
+.token8 {
+    border: 1px solid #ddd;
+
+    padding: 5px 10px;
+
+    font-size: 15px;
+    color: #555;
+
+    background: white;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.token4:hover,
+.token5:hover,
+.token6:hover,
+.token7:hover,
+.token8:hover {
+    background: #f5634b;
+    color: white;
+    border-color: #f5634b;
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+ /* ================= FOOTER ================= */
+
+footer {
+    width: 100%;
+    background-color: #151515;
+    color: #aaa;
+    padding: 60px 7% 0;
+}
+
+.m-foot {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1.2fr 1fr 1.3fr;
+    gap: 35px;
+
+    padding-bottom: 45px;
+}
+
+/* Footer headings */
+
+.ft1 h1,
+.ft2 h1,
+.ft3 h1,
+.ft4 h1 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+/* Footer paragraphs */
+
+.m-foot p {
+    color: #999;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Recent posts */
+
+.p3 {
+    color: #ddd !important;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.p3:hover {
+    color: #f5634b !important;
+}
+
+.p4 {
+    font-size: 14px !important;
+    margin-top: -10px;
+}
+
+/* Quick links */
+
+.ft3 h5 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.ft3 a {
+    color: #aaa;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.ft3 a:hover {
+    color: #f5634b;
+    padding-left: 5px;
+}
+
+/* Location */
+
+.address {
+    line-height: 1.8;
+}
+
+.ft4 .phone,
+.ft4 .email {
+    color: #aaa;
+    font-size: 16px;
+    padding: 0;
+}
+
+/* Copyright section */
+
+.m-footer {
+    max-width: 1200px;
+    margin: auto;
+
+    border-top: 1px solid #333;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 0;
+}
+
+.pa p {
+    color: #999;
+    font-size: 15px;
+    margin: 0;
+}
+
+.theme {
+    color: #f5634b;
+}
+
+/* Footer social icons */
+
+.m-footer .ic {
+    display: flex;
+    gap: 15px;
+}
+
+.m-footer .ic i {
+    font-size: 18px;
+    color: #aaa;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.m-footer .ic i:hover {
+    color: #f5634b;
+}
+
+
+
+
+ 
